@@ -1,33 +1,33 @@
 安装方法
 =======================================
 
-1. 拷贝字体到 ``usr/share/fonts``
+1. 拷贝字体到 *usr/share/fonts*
    
-   .. code-block:: shell
-      
-      cp -r ./wps-font-symbols /usr/share/fonts/
+.. code-block:: shell
+      
+   cp -r ./wps-font-symbols /usr/share/fonts/
    
 2. 权限配置
    
-   .. code-block:: shell
-      
-      cd /usr/share/fonts
+.. code-block:: shell
       
-      chmod 755 wps-font-symbols
+   cd /usr/share/fonts
       
-      cd /usr/share/fonts/wps-font-symbols
+   chmod 755 wps-font-symbols
       
-      chmod 644 *
+   cd /usr/share/fonts/wps-font-symbols
+      
+   chmod 644 *
       
 3. 生成字体缓存信息
    
-   .. code-block:: shell
-      
-      cd /usr/share/fonts/wps-font-symbols
+.. code-block:: shell
       
-      mkfontdir
+   cd /usr/share/fonts/wps-font-symbols
       
-      mkfontscale
+   mkfontdir
       
-      fc-cache
+   mkfontscale
+      
+   fc-cache
       
